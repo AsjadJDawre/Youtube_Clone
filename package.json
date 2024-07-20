@@ -2,14 +2,18 @@
   "name": "youtube_clone",
   "version": "1.0.0",
   "description": "A complete backend for youtube feature and more",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon src/index.js"
   },
   "keywords": [
     "javascript",
     "Backend"
   ],
   "author": "Asjad Johar Dawre",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
 }
