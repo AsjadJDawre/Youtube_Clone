@@ -1,0 +1,2 @@
+PORT=<Your Port Here>
+MONGODB_URI=mongodb+srv://username123:<your PassWord Here>@cluster0.bxbynvz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
