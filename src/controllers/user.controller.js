@@ -234,11 +234,13 @@ const getCurrentUser = asyncHandler(async (req,res)=>{
     .json(new ApiResponse(200,req.user,"Current user Fetched Successfully"))
 })
 
-const updateAccountDetails =asyncHandler(async (req,res)=>{
-    const {fullname,email}=req.body;
-    console.log(fullname,email)
-    if(!fullname || !email){
-        throw new ApiError(400,"all fields are required ")
+
+const updateAccountDetails = asyncHandler(async(req, res) => {
+    const {fullName, email} = req.body
+console.log("fullname : " +fullName," Email : "+email);
+
+    if (!fullName || !email) {
+        throw new ApiError(400, "All fields are required")
     }
 
    const user= User.findByIdAndUpdate(req.user?._id,{
